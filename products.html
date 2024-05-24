@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Fresh Wave</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/freshwavelogo.png" width="125px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CATEGORIES</a></li>
+            <li><a href="">ORDER</a></li>
+            <li><a href="">LOYALTY</a></li>
+          </ul>
+        </nav>
+        <img src="images/cart png 1.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    
+    </div>
+  </div>
+
+  <!-----featured categories -------->
+  <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img src="images/cat1-dairy.png">
+        </div>
+        <div class="col-3">
+          <img src="images/cat2-veg.png">
+        </div>
+        <div class="col-3">
+          <img src="images/cat3-skin.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-----dairy products-------->
+  <div class="dairy">
+    <div class="small-container">
+      <h2 class="title">Dairy Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/butter pic.png">
+          <h4>Salted Butter 500g</h4>
+          <p>Rs.1200</p>
+        </div>
+        <div class="col-4">
+          <img src="images/cheddar cheese pic.png">
+          <h4>Cheddar Cheese 250g</h4>
+          <p>Rs.1400</p>
+        </div>
+        <div class="col-4">
+          <img src="images/milk carton pic.png">
+          <h4>Fresh Milk 1L</h4>
+          <p>Rs.850</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------vegetables----->
+  <div class="vegetables">
+    <div class="small-container">
+      <h2 class="title">Vegetables</h2>
+      <div class="row">
+        <div class="col-5">
+          <img src="images/carrot pic.png">
+          <h4>Carrot 500g</h4>
+          <p>Rs.800</p>
+        </div>
+        <div class="col-5">
+          <img src="images/eggplant pic.png">
+          <h4>Eggplant 250g</h4>
+          <p>Rs.450</p>
+        </div>
+        <div class="col-5">
+          <img src="images/tomato pic.png">
+          <h4>Tomato 100g</h4>
+          <p>Rs.180</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------skin products----->
+  <div class="skin">
+    <div class="small-container">
+      <h2 class="title">Cosmetics & Skin</h2>
+      <div class="row">
+        <div class="col-6">
+          <img src="images/cerave pic.png">
+          <h4>CeraVe Moisturizing Lotion</h4>
+          <p>Rs.8900</p>
+        </div>
+        <div class="col-6">
+          <img src="images/eyeliner pic.png">
+          <h4>Liquid Eyeliner</h4>
+          <p>Rs. 1200</p>
+        </div>
+        <div class="col-6">
+          <img src="images/lipkit pic.png">
+          <h4>KC Lip Kit</h4>
+          <p>Rs.4550</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>

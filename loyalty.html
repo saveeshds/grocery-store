@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Wave - Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/freshwavelogo.png" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="categories.html">CATEGORIES</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="loyalty.html">LOYALTY</a></li>
+          </ul>
+        </nav>
+        <img src="images/cart png 1.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+  </div>
+
+  <div class="loyalty-page">
+    <div class="container">
+        <h1><center>Join for Savings,Stay for rewards! </center></h1>
+      <div class="row">
+        <div class="col-2">
+          <img src="images/grocery bag pic 1.png" width="100%">
+          
+        </div>
+        <div class="col-2">
+          <div class="form-container">
+            <!-- Add form or content here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>
